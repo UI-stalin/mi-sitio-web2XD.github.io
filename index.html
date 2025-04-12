@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos básicos para configuración de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memes Comunistas</title>
+    <!-- Enlaces a hojas de estilo: local y FontAwesome para iconos -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Mensaje de bienvenida que aparece temporalmente al cargar la página -->
     <div id="welcome-message" class="welcome-message">
         <h2>¡Bienvenido, Camarada!</h2>
         <p>Juntos disfrutaremos de los mejores memes comunistas</p>
     </div>
 
+    <!-- Encabezado principal del sitio -->
     <header>
         <div class="container">
             <h1>Memes Comunistas</h1>
+            <!-- Botón para cambiar entre modo claro y oscuro -->
             <button id="dark-mode-toggle" class="dark-mode-toggle">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
             </button>
+            <!-- Botón para mostrar/ocultar menú en dispositivos móviles -->
             <button id="mobile-menu-toggle" class="mobile-menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
+    <!-- Navegación principal del sitio -->
     <nav id="main-nav">
         <div class="container">
             <ul>
@@ -37,7 +44,9 @@
         </div>
     </nav>
 
+    <!-- Contenido principal del sitio -->
     <main>
+        <!-- Sección de inicio con meme destacado -->
         <section id="home" class="container">
             <h2>Los mejores memes comunistas de internet</h2>
             <div class="featured-meme">
@@ -47,9 +56,11 @@
             <p>Bienvenido a nuestra colección de memes comunistas. Aquí encontrarás humor revolucionario para compartir con tus camaradas.</p>
         </section>
 
+        <!-- Sección de galería de memes -->
         <section id="memes" class="container meme-gallery">
             <h2>Galería de Memes</h2>
             <div class="meme-grid">
+                <!-- Tarjetas individuales de memes -->
                 <div class="meme-card">
                     <img src="img/image.png" alt="Meme comunista">
                     
@@ -77,15 +88,18 @@
             </div>
         </section>
 
+        <!-- Sección de información sobre el sitio -->
         <section id="about" class="container">
             <h2>Sobre Nosotros</h2>
             <p>Somos un colectivo de entusiastas del humor que busca compartir risas a través de memes comunistas. Nuestro objetivo es simple: hacer reír a la gente con contenido humorístico relacionado con la temática comunista.</p>
         </section>
 
+        <!-- Sección de contacto con formulario -->
         <section id="contact" class="container">
             <h2>Contacto</h2>
             <p>¿Tienes algún meme para compartir? ¡Contáctanos!</p>
             
+            <!-- Formulario de contacto con validación -->
             <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Nombre *</label>
@@ -111,12 +125,14 @@
         </section>
     </main>
 
+    <!-- Pie de página del sitio -->
     <footer>
         <div class="container">
             <p>&copy; 2023 Memes Comunistas. Todos los derechos son de todos.</p>
         </div>
     </footer>
 
+    <!-- Enlace al archivo JavaScript para la funcionalidad interactiva -->
     <script src="script.js"></script>
 </body>
 </html>
